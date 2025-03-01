@@ -18,10 +18,9 @@ for (i = 0; i < allButton.length; i++) {
   const button = allButton[i];
   button.addEventListener("click", function (event) {
     const click = event.target.innerHTML;
-    // const t = event.target.getElementsByClassName("title-text");
-    // t.innerHTML = t;
-    // const title = document.getElementsByClassName("title-text");
-    // console.log(t);
+    let grandParent = event.target.parentElement.parentElement.parentElement;
+    let child = grandParent.querySelector(".title-text");
+    let title = child.textContent;
 
     // Plus && Minus
     if (click) {
@@ -39,8 +38,7 @@ for (i = 0; i < allButton.length; i++) {
       const p = document.createElement("p");
       p.innerHTML = `
                      <p class="bg-[#F4F7FF] p-3 text-gray-500 mt-0 my-3  rounded-xl text-sm">You have Complete The Task
-                        Add
-                        Dark Mode at 12:48:15 PM
+                        ${title} at 12:48:15 PM
                     </p>              
       `;
       history.appendChild(p);
@@ -49,13 +47,10 @@ for (i = 0; i < allButton.length; i++) {
         history.innerHTML = "";
       });
     }
-    // alert("okay");
   });
 }
+
 // redirect page
 document.getElementById("discover").addEventListener("click", function () {
   window.location.href = "../inside.html";
-});
-document.getElementById("back").addEventListener("click", function () {
-  window.location.href = "../index.html";
 });
