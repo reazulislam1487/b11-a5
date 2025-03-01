@@ -40,7 +40,7 @@
 
                 </div>
                 <div class=" bg-[#F4F7FF] rounded-full p-3">
-                    <img src="./assets/theme-btn.png" alt="">
+                    <img id="button" src="./assets/theme-btn.png" alt="">
                 </div>
             </div>
         </nav>
@@ -52,7 +52,7 @@
             <div class="col-span-9 space-y-5 bg-white rounded-2xl p-5">
                 <!-- first -->
                 <div class="flex gap-6">
-                    <div class="rounded-xl w-1/4 justify-center pl-2 py-4  flex gap-4 items-center bg-[#F4F7FF]">
+                    <div class="rounded-xl w-1/4 justify-center py-4  flex gap-2 items-center bg-[#F4F7FF]">
                         <div class="bg-white rounded-full p-3"><img src="./assets/checkbox.png" alt=""></div>
                         <div>
                             <p>Task Assigned</p>
@@ -67,11 +67,10 @@
 
                         </div>
                     </div>
-                    <div class=" rounded-xl  w-1/4 flex pl-2 py-4  flex gap-4 items-center bg-[#F4F7FF]">
+                    <div class=" rounded-xl  w-1/4 flex pl-3 py-4  flex gap-4 items-center bg-[#F4F7FF]">
                         <div class="bg-white rounded-full p-3"><img src="./assets/calender.png" alt=""></div>
                         <div>
-                            <p>Task Assigned</p>
-                            <p class="font-bold text-3xl">6</p>
+                            <p id="date" class="text-[18px] font-bold"></p>
                         </div>
                     </div>
                     <!-- box container-->
@@ -93,14 +92,33 @@
                                 <p>21 March 2025</p>
                             </div>
                             <div>
-                                <button class="bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
+                                <button id="btn-1"
+                                    class="all-btn bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
                             </div>
                         </div>
                     </div>
                     <!-- box  -->
                     <div class="bg-[#F4F7FF] p-4 rounded-xl col-span-1 ">
-                        <span class=" bg-white p-1 rounded-md">Shop Ease</span>
-                        <h2 class=" mt-3 font-medium text-xl">Fix Mobile Button Issue</h2>
+                        <span class=" bg-white p-1 rounded-md">CloudSync</span>
+                        <h2 class=" mt-3 font-medium text-xl">Add Dark Mode</h2>
+                        <p class="bg-white p-1 text-gray-500 my-3  rounded-xl text-sm">Store the user's preference in
+                            localStorage, update CSS variables...
+                        </p>
+                        <div class="flex justify-between border-t-1 border-dashed border-[#dae0f0bd] ">
+                            <div>
+                                <p class="text-gray-500 text-sm mt-2">Deadline</p>
+                                <p>21 March 2025</p>
+                            </div>
+                            <div>
+                                <button id="btn-2"
+                                    class=" all-btn bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box  -->
+                    <div class="bg-[#F4F7FF] p-4 rounded-xl col-span-1 ">
+                        <span class=" bg-white p-1 rounded-md">SwiftPay</span>
+                        <h2 class=" mt-3 font-medium text-xl">Optimize Home page </h2>
                         <p class="bg-white p-1 text-gray-500 my-3  rounded-xl text-sm">Debug using Chrome DevTools,
                             check for
                             overlapping elements...
@@ -111,14 +129,15 @@
                                 <p>21 March 2025</p>
                             </div>
                             <div>
-                                <button class="bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
+                                <button id="btn-3"
+                                    class="all-btn bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
                             </div>
                         </div>
                     </div>
                     <!-- box  -->
                     <div class="bg-[#F4F7FF] p-4 rounded-xl col-span-1 ">
-                        <span class=" bg-white p-1 rounded-md">Shop Ease</span>
-                        <h2 class=" mt-3 font-medium text-xl">Fix Mobile Button Issue</h2>
+                        <span class=" bg-white p-1 rounded-md">Meta</span>
+                        <h2 class=" mt-3 font-medium text-xl">Add new emoji 🤲</h2>
                         <p class="bg-white p-1 text-gray-500 my-3  rounded-xl text-sm">Debug using Chrome DevTools,
                             check for
                             overlapping elements...
@@ -129,32 +148,15 @@
                                 <p>21 March 2025</p>
                             </div>
                             <div>
-                                <button class="bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
+                                <button id="btn-1"
+                                    class="all-btn bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
                             </div>
                         </div>
                     </div>
                     <!-- box  -->
                     <div class="bg-[#F4F7FF] p-4 rounded-xl col-span-1 ">
-                        <span class=" bg-white p-1 rounded-md">Shop Ease</span>
-                        <h2 class=" mt-3 font-medium text-xl">Fix Mobile Button Issue</h2>
-                        <p class="bg-white p-1 text-gray-500 my-3  rounded-xl text-sm">Debug using Chrome DevTools,
-                            check for
-                            overlapping elements...
-                        </p>
-                        <div class="flex justify-between border-t-1 border-dashed border-[#dae0f0bd] ">
-                            <div>
-                                <p class="text-gray-500 text-sm mt-2">Deadline</p>
-                                <p>21 March 2025</p>
-                            </div>
-                            <div>
-                                <button class="bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- box  -->
-                    <div class="bg-[#F4F7FF] p-4 rounded-xl col-span-1 ">
-                        <span class=" bg-white p-1 rounded-md">Shop Ease</span>
-                        <h2 class=" mt-3 font-medium text-xl">Fix Mobile Button Issue</h2>
+                        <span class=" bg-white p-1 rounded-md">Google LLC</span>
+                        <h2 class=" mt-3 font-medium text-xl">Integrate OpenAI API </h2>
                         <p class="bg-white p-1 text-gray-500 my-3  rounded-xl text-sm">Debug using Chrome DevTools,
                             check for
                             overlapping elements...
@@ -165,14 +167,15 @@
                                 <p>21 March 2025</p>
                             </div>
                             <div>
-                                <button class="bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
+                                <button id="btn-1"
+                                    class="all-btn bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
                             </div>
                         </div>
                     </div>
                     <!-- box  -->
                     <div class="bg-[#F4F7FF] p-4 rounded-xl col-span-1 border-b-indigo-500 border-dashed">
-                        <span class=" bg-white p-1 rounded-md">Shop Ease</span>
-                        <h2 class=" mt-3 font-medium text-xl">Fix Mobile Button Issue</h2>
+                        <span class=" bg-white p-1 rounded-md">Glassdoar</span>
+                        <h2 class=" mt-3 font-medium text-xl">Improve Job searching </h2>
                         <p class="bg-white p-1 text-gray-500 my-3  rounded-xl text-sm">Debug using Chrome DevTools,
                             check for
                             overlapping elements...
@@ -183,7 +186,8 @@
                                 <p>21 March 2025</p>
                             </div>
                             <div>
-                                <button class="bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
+                                <button id="btn-6"
+                                    class="all-btn bg-[#3752FD] text-white  px-2 py-1 rounded mt-2">Completed</button>
                             </div>
                         </div>
                     </div>
