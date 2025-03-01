@@ -9,12 +9,19 @@ document.getElementById("button").addEventListener("click", function () {
 let date = new Date();
 
 document.getElementById("date").innerHTML = date.toDateString();
+
+// main function
+
 const allButton = document.getElementsByClassName("all-btn");
 // console.log(allButton);
 for (i = 0; i < allButton.length; i++) {
   const button = allButton[i];
   button.addEventListener("click", function (event) {
     const click = event.target.innerHTML;
+    // const t = event.target.getElementsByClassName("title-text");
+    // t.innerHTML = t;
+    // const title = document.getElementsByClassName("title-text");
+    // console.log(t);
 
     // Plus && Minus
     if (click) {
@@ -45,3 +52,10 @@ for (i = 0; i < allButton.length; i++) {
     // alert("okay");
   });
 }
+// redirect page
+document.getElementById("discover").addEventListener("click", function () {
+  window.location.href = "../inside.html";
+});
+document.getElementById("back").addEventListener("click", function () {
+  window.location.href = "../index.html";
+});
