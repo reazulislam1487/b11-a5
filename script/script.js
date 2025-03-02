@@ -1,20 +1,12 @@
-//button
+//color change
 document.getElementById("button").addEventListener("click", function () {
   document.body.style.backgroundColor =
     "#" + Math.floor(Math.random() * 16777215).toString(16);
 });
 // current date
-
-// date set
 let date = new Date();
 
 document.getElementById("date").innerHTML = date.toDateString();
-// time set
-const time = new Date();
-date.setHours(12);
-date.setMinutes(48);
-date.setSeconds(15);
-let currentTime = time.toLocaleTimeString();
 
 // main function
 
@@ -44,6 +36,12 @@ for (i = 0; i < allButton.length; i++) {
     } else {
       alert("Board updated Successfully");
     }
+    // time set
+    const time = new Date();
+    date.setHours(12);
+    date.setMinutes(48);
+    date.setSeconds(15);
+    let currentTime = time.toLocaleTimeString();
 
     //   create history
     const history = document.getElementById("history");
@@ -63,5 +61,5 @@ for (i = 0; i < allButton.length; i++) {
 
 // redirect page
 document.getElementById("discover").addEventListener("click", function () {
-  window.location.href = "../inside.html";
+  window.location.href = "inside.html";
 });
